@@ -1,4 +1,4 @@
-base_model: NousResearch/Llama-2-70b-chat-hf
+base_model: meta-llama/Llama-2-70b-hf
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 is_llama_derived_model: true
@@ -7,6 +7,7 @@ hub_model_id : data_job_salaries_fr
 load_in_8bit: false
 load_in_4bit: true
 strict: false
+hf_use_auth_token: true
 
 datasets:
   - path: axel-rda/data_job_salaries_fr
@@ -14,6 +15,7 @@ datasets:
 dataset_prepared_path:
 val_set_size: 0.05
 output_dir: ./qlora-out
+hub_model_id: axel-rda/data_job_salaries_fr
 
 adapter: qlora
 lora_model_dir:
