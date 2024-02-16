@@ -1,4 +1,4 @@
-base_model: NousResearch/Llama-2-7b-hf
+base_model: NousResearch/Llama-2-70b-chat-hf
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 is_llama_derived_model: true
@@ -36,8 +36,8 @@ wandb_name:
 wandb_log_model: 
 
 gradient_accumulation_steps: 8
-micro_batch_size: 10
-num_epochs: 2
+micro_batch_size: 4
+num_epochs: 1
 optimizer: paged_adamw_32bit
 lr_scheduler: cosine
 learning_rate: 0.0002
