@@ -1,4 +1,4 @@
-base_model: meta-llama/Llama-2-70b-hf
+base_model: TheBloke/Llama-2-70B-GPTQ
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 is_llama_derived_model: true
